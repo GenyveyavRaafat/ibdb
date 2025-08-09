@@ -1,0 +1,25 @@
+body {
+    background-image: url("librar.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: -10px;
+
+}
+
+img {
+    margin-left: 25px;
+}
+
+form {
+    background-color: rgba(220, 156, 113, 0.7);
+    width: 500px;
+    margin-left: 640px;
+    margin-top: 170px;
+    border-radius: 10px;
+}
+
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}

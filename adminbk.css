@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+/* body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efe5d9;
+    padding: 30px;
+} */
+
+.pagetitle{
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+
+
+.allBooks {
+    /* max-width: 900px; */
+    max-width: 100%;
+    border: 3px solid rgb(205, 125, 28);;
+    background-color: rgb(245, 223, 192);
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+}
+
+table{
+    width: 100%;
+    font-size: 13px;
+    color: brown;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+table>thead{
+    background-color: rgb(205, 125, 28);
+    color: rgb(2, 18, 18);
+}
+ table>thead th{
+    padding: 15px;
+ }
+
+ table th,
+ table td{
+    border: 1px solid white;
+    padding: 10px 15px;
+ }
+
+ table>tbody>tr>td>img{
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 2px solid rgb(205, 125, 28);
+    box-shadow: 0 2px 6px #0003;
+ }
+
+ .actionbtn{
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+ }
+
+ .actionbtn>a{
+    text-decoration: none;
+    color: #444;
+    /* background: #fff; */
+    border: 1px solid orange;
+    display: inline-block;
+    padding: 7px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+ }
+
+.actionbtn .edit{
+   border-color: rgb(145, 215, 40);
+    background-color: rgb(145, 215, 40);
+}
+
+.actionbtn .rmv{
+   border-color: red;
+    background-color: red;
+}
+
+
+ /* .actionbtn>a:nth-child(1){
+    border-color: rgb(145, 215, 40);
+    background-color: rgb(145, 215, 40);
+    
+ } */
+
+ /* .actionbtn>a:nth-child(2){
+    border-color: red;
+    background-color: red;
+ } */
+
+ .actionbtn>a:hover{
+    box-shadow: 0 3px 8px #0003;
+
+ }
+
+ table>tbody>tr{
+    /* background-color: #fff; */
+    transition: 0.3s ease-in-out;
+ }
+
+ table>tbody>tr:nth-child(even){
+background-color:rgb(237, 234, 229) ;
+ }
+
+ table>tbody>tr:hover{
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.218));
+ }
+
+ .pagetitle{
+    color:white;
+ }
+
+ #add{
+   background-color: rgb(205, 125, 28);
+   border-color: rgb(245, 223, 192);
+   padding: 10px;
+   font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 8px #0003;
+    width: 15%;
+    margin: 2ch;
+    cursor: pointer;
+
+ }
+
+ .bookinput{
+   padding: 5px;
+   margin: 2ch;
+ }

@@ -1,0 +1,846 @@
+global rules * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #130f0c;
+   background-image: url("bg.jpg");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: 1120px -160px;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+/* small */
+@media(min-width: 768px) {
+   .cont {
+      width: 750px;
+   }
+}
+
+/* medium */
+@media(min-width: 992px) {
+   .cont {
+      width: 970px;
+   }
+}
+
+/* large */
+@media(min-width: 1200px) {
+   .cont {
+      width: 1170px;
+   }
+}
+
+/* end global rules */
+
+/* start heaader */
+header {
+   width: 100%;
+   height: 8vh;
+   margin-top: -8px;
+}
+
+header .wrapper {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+header nav .pform {
+   width: 250px;
+   height: 30px;
+   position: relative;
+   margin-right: 30px;
+   border-left: 1px solid beige;
+   margin-top: -43px;
+   cursor: pointer;
+}
+
+header nav .pform i {
+   color: beige;
+   position: absolute;
+   font-size: 20px;
+   top: 12%;
+   transform: translate(-50%);
+   right: 0;
+
+}
+
+/*start new  */
+header .links {
+   position: relative;
+}
+
+header .links #ph {
+   width: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   margin-top: -20px;
+}
+
+header .links ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   background-color: rgba(232, 219, 176, 0.649);
+   position: absolute;
+   right: 0;
+   min-width: 200px;
+   top: calc(100%);
+   display: none;
+   z-index: 1;
+}
+
+.list::before {
+   content: '';
+   position: absolute;
+   top: -20px;
+   right: 5px;
+   width: 20px;
+   height: 20px;
+   transform: rotate(45deg);
+}
+
+header .links:hover ul {
+   display: block;
+}
+
+header .links ul li a {
+   display: block;
+   padding: 15px;
+   text-decoration: none;
+   color: #333;
+   transition: 00.3s;
+}
+
+header .links ul li a:hover {
+   padding-left: 25px;
+}
+
+
+/* end new */
+
+header nav .searchf {
+   width: 180px;
+   height: 20px;
+   border: 2px solid rgb(232, 219, 176);
+   background: #fff;
+   display: flex;
+   align-items: center;
+   border-radius: 1.5rem;
+   overflow: hidden;
+}
+
+header nav .searchf input {
+   font-size: 12pxrem;
+   padding: 0 8px;
+   height: 100%;
+   width: 100%;
+   text-transform: none;
+   border: none;
+   outline: none;
+}
+
+header nav .searchf label {
+   font-size: 10px;
+   padding-right: 5px;
+   color: black;
+
+}
+
+header nav .searchf label:hover {
+   color: rgb(232, 219, 176);
+}
+
+header nav .pform #hh {
+   position: absolute;
+   margin-right: 22px;
+}
+
+header nav .pform #ph {
+   position: absolute;
+   margin-right: -10px;
+}
+
+.logo {
+   position: fixed;
+   float: left;
+   margin: 3px 6px;
+}
+
+.pform {
+   position: fixed;
+   float: right;
+}
+
+nav {
+   position: fixed;
+   width: 100%;
+}
+
+nav ul {
+   list-style: none;
+   background: #130f0c;
+   overflow: hidden;
+   color: white;
+   padding: 0;
+   text-align: center;
+   margin: 0;
+   transition: 1s;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 20px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+   color: rgb(232, 219, 176);
+   border-bottom: 3px solid rgb(232, 219, 176);
+}
+
+/*favorite list*/
+
+header .cart-items-container {
+   position: absolute;
+   top: 50px;
+   right: -18px;
+   height: 380px;
+   width: 230px;
+   padding: 0 1.5rem;
+   background-color: rgb(232, 219, 176, 0.7);
+   display: none;
+}
+
+header .cart-items-container.active {
+   right: 0;
+}
+
+header .cart-items-container .cart-item {
+   position: relative;
+   margin: 15px 0;
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+header .cart-items-container .cart-item .fa-times {
+   position: absolute;
+   top: 1rem;
+   right: 1.5rem;
+   font-size: 13px;
+   cursor: pointer;
+   color: black;
+}
+
+header .cart-items-container .cart-item .fa-times:hover {
+   color: #d3ad7f;
+}
+
+header .cart-items-container .cart-item img {
+   height: 60px;
+}
+
+header .cart-items-container .cart-item .content h3 {
+   font-size: 15px;
+   color: black;
+   padding-bottom: .5rem;
+}
+
+/* end header */
+
+
+h2 {
+
+   color: rgb(255, 255, 255);
+}
+
+.h {
+   color: rgba(255, 255, 255, 40%)
+}
+
+.gridd {
+   column-gap: 30px;
+   margin: 20px;
+   margin-left: 20px;
+   width: 1130px;
+   height: 900px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   transition: transform 0.5;
+}
+
+.gridd div {
+   color: white;
+   padding: 10px;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 0px;
+
+}
+
+.imagebk {
+
+   padding-top: 70px;
+}
+
+p {
+   color: aliceblue;
+   text-align: center;
+   font-size: 22px;
+}
+
+.y {
+   border: 3px solid rgb(232, 219, 176);
+
+}
+
+.y:hover {
+   transform: translateY(-10px);
+   background-color: rgba(176, 139, 71, 0.496);
+}
+
+
+.hbtn {
+   float: left;
+   margin-left: 10px;
+   display: flex;
+   background: transparent;
+   font-size: 30px;
+   border: none;
+   outline: none;
+   color: #ccc;
+}
+
+.hbtn i:hover {
+   cursor: pointer;
+}
+
+
+
+.btns {
+   display: float;
+   margin-top: 80px;
+   width: 71%;
+   margin-left: 50px;
+   text-align: center;
+   padding: 26px;
+   font-size: xx-large;
+}
+
+.btnss {
+   border: 3px solid rgb(232, 219, 176);
+   border-radius: 4px;
+}
+
+.btnss:hover {
+   cursor: pointer;
+   background-color: rgba(217, 192, 151, 0.519);
+   border-radius: 6px;
+   font-weight: bolder;
+}
+
+.rbtn {
+   margin-left: 0px;
+   display: flex;
+   background: transparent;
+   font-size: 30px;
+   border: none;
+   outline: none;
+   color: #ccc;
+   cursor: pointer;
+}
+
+.rbtn:hover {
+   color: rgb(232, 219, 176);
+   font-weight: bold;
+
+}
+
+
+/*POP UP WINDOW*/
+p.titl {
+   font-size: 35px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   color: rgb(232, 219, 176);
+}
+
+.imgcontainer {
+   margin: 24px 0 12px 0;
+   position: relative;
+}
+
+img.avatar {
+   float: left;
+   width: 380px;
+   padding-left: 400px;
+   padding-top: 35px;
+}
+
+
+
+span.psw {
+   float: right;
+   padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.892);
+   /* Black w/ opacity */
+   padding-top: 60px;
+
+}
+
+
+/* The Close Button (x) */
+.close {
+   position: absolute;
+   right: 25px;
+   top: 0;
+   color: rgb(254, 254, 254);
+   font-size: 35px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: rgb(232, 219, 176);
+   cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+   -webkit-animation: animatezoom 0.6s;
+   animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+   from {
+      -webkit-transform: scale(0)
+   }
+
+   to {
+      -webkit-transform: scale(1)
+   }
+}
+
+@keyframes animatezoom {
+   from {
+      transform: scale(0)
+   }
+
+   to {
+      transform: scale(1)
+   }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+   span.psw {
+      display: block;
+      float: none;
+   }
+
+   .close {
+      width: 100%;
+   }
+}
+
+/*password pop up and button*/
+
+/* Full-width input fields */
+input[type=password] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+/* Set a style for button */
+.adm {
+   background-color: #93dac0;
+   color: white;
+   padding: 14px 20px;
+   margin-left: 25px;
+   margin-top: -100px;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+}
+
+.adm:hover {
+   opacity: 0.8;
+}
+
+.imgcontainerr {
+
+   margin: 12px 0 12px 0;
+   position: relative;
+}
+
+.containerr {
+   padding: 106px;
+}
+
+#cancel:hover,
+#cancel:focus {
+   color: red;
+   cursor: pointer;
+}
+
+/* Modal Content/Box */
+.modal-content {
+   background-color: hsla(0, 0%, 100%, 0.344);
+   margin: 5% auto 15% auto;
+   /* 5% from the top, 15% from the bottom and centered */
+   border: 1px solid #888;
+   width: 80%;
+   /* Could be more or less, depending on screen size */
+}
+
+
+/*slider*/
+
+#slider {
+
+   margin-left: 250px;
+   margin-top: 115px;
+   width: 650px;
+   max-width: 100%;
+   text-align: center;
+   border: 4px solid rgb(232, 219, 176);
+
+}
+
+#slider input[type=radio] {
+   display: none;
+}
+
+#slider label {
+   cursor: pointer;
+
+}
+
+#slides {
+   padding: 4px;
+   position: relative;
+   z-index: 1;
+}
+
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+   margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+   margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+   margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+   margin-left: -300%;
+}
+
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
+}
+
+#slides .slide {
+   width: 25%;
+   float: left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+
+}
+
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+
+#controls label:hover {
+   opacity: 1;
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(4),
+#slide4:checked~#controls label:nth-child(1) {
+   float: right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+
+#slide1:checked~#controls label:nth-last-child(2),
+#slide2:checked~#controls label:nth-last-child(3),
+#slide3:checked~#controls label:nth-last-child(4),
+#slide4:checked~#controls label:nth-last-child(1) {
+
+   float: left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+   background: #444;
+}
+
+#slides {
+   max-width: calc(100% - 140px);
+   margin: 0 auto;
+}
+
+/*rating*/
+
+.rating {
+   position: relative;
+   width: 400px;
+   background: #111;
+   padding: 20px 30px;
+   border: 1px solid #444;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   left: 90px;
+   top: 100px;
+}
+
+.rating .post {
+   display: none;
+}
+
+.rating .text {
+   font-size: 25px;
+   color: #666;
+   font-weight: 500;
+}
+
+.rating .edit {
+   position: absolute;
+   right: 10px;
+   top: 5px;
+   font-size: 16px;
+   color: #666;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.rating .edit:hover {
+   text-decoration: underline;
+}
+
+.rating .star-widget input {
+   display: none;
+}
+
+.star-widget label {
+   font-size: 40px;
+   color: #444;
+   padding: 10px;
+   float: right;
+   transition: all 0.2s ease;
+   cursor: pointer;
+}
+
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+   color: #fd4;
+}
+
+input:checked~label {
+   color: #fd4;
+}
+
+input#rate-5:checked~label {
+   color: #fe7;
+   text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked~form h4:before {
+   content: "I just hate it ";
+}
+
+#rate-2:checked~form h4:before {
+   content: "I don't like it ";
+}
+
+#rate-3:checked~form h4:before {
+   content: "It is awesome ";
+}
+
+#rate-4:checked~form h4:before {
+   content: "I just like it ";
+}
+
+#rate-5:checked~form h4:before {
+   content: "I just love it ";
+}
+
+.rating form {
+   display: none;
+}
+
+input:checked~form {
+   display: block;
+}
+
+form h4 {
+   width: 100%;
+   font-size: 25px;
+   color: #fe7;
+   font-weight: 500;
+   margin: 5px 0 20px 0;
+   text-align: center;
+   transition: all 0.2s ease;
+}
+
+form .textarea {
+   height: 100px;
+   width: 100%;
+   overflow: hidden;
+}
+
+form .textarea textarea {
+   height: 100%;
+   width: 100%;
+   outline: none;
+   color: #eee;
+   border: 1px solid #333;
+   background: #222;
+   padding: 10px;
+   font-size: 17px;
+   resize: none;
+}
+
+.textarea textarea:focus {
+   border-color: #444;
+}
+
+form .subbtn {
+   height: 45px;
+   width: 100%;
+   margin: 15px 0;
+}
+
+form .subbtn button {
+   height: 100%;
+   width: 100%;
+   border: 1px solid #444;
+   outline: none;
+   background: #222;
+   color: #999;
+   font-size: 17px;
+   font-weight: 500;
+   text-transform: uppercase;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+form .subbtn button:hover {
+   background: #1b1b1b;
+}
+
+.review .box .stars i {
+   font-size: 1.5rem;
+   color: #d3ad7f;
+}
+
+.review {
+   margin-top: 100px;
+   margin-right: 250px;
+}
+
+.quote {
+   margin-left: 280px;
+}
+
+.review .box .stars {
+   margin-left: 280px;
+}
+
+.stars {
+   padding-left: 750px;
+}

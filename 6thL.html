@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+
+            <nav>
+
+                <div class="logo">
+                    <img src="log2.png" alt="logo" height="60" width="90">
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a class="active" href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/aL.html">Home</a></li>
+                        <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/aboutL.html">About</a></li>
+                        <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/contactL.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="pform">
+                    <form action="" class="searchf">
+                        <input type="text" placeholder="Search here..." id="searchbox">
+                        <label for="searchbox" class="fas fa-search"></label>
+                    </form>
+                    <i id="hh" onclick="favlist()" class="fas fa-heart"></i>
+                    <div class="links">
+                        <i id="ph" class="fas fa-user"></i>
+                        <div class="list">
+                            <ul>
+                                <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/profile.html" onclick="callvalue()">Profile Info</a>
+                                </li>
+                                <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/video/index.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-items-container" id="favl">
+                    <div class="cart-item">
+                        <span class="fas fa-times"></span>
+                        <img src="unravel.jpg" alt="">
+                        <div class="content">
+                            <h3>Unravel Me</h3>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <span class="fas fa-times"></span>
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <h3>Maybe Someday</h3>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <span class="fas fa-times"></span>
+                        <img src="amareta.jpg" alt="">
+                        <div class="content">
+                            <h3>Amareta</h3>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <span class="fas fa-times"></span>
+                        <img src="believe me.jpg" alt="">
+                        <div class="content">
+                            <h3>Believe Me</h3>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <span class="fas fa-times"></span>
+                        <img src="hopless.jpg" alt="">
+                        <div class="content">
+                            <h3>Hopless</h3>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="grid">
+
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn1" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="family.jpg" alt="Unable to load" class="imagebk">
+            <p>The Family Upstairs</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn2" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id02').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="the maidens.jpg" alt="Unable to load" class="imagebk">
+            <p>The Maidens</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn3" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id03').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="silent.jpg" alt="Unable to load" class="imagebk">
+            <p>The Silent Patient</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn4" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id04').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="the cruel prince.jpg" alt="Unable to load" class="imagebk">
+            <p>The Cruel Prince</p>
+            <p class="h">Part One</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn5" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id05').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="the lost sisters 2.jpg" alt="Unable to load" class="imagebk">
+            <p>The Lost Sisters</p>
+            <p class="h">Part Two</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn6" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id06').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="wicked.jpg" alt="Unable to load" class="imagebk">
+            <p>The Wicked King</p>
+            <p class="h">Part Three</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn7" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id07').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="queen.jpg" alt="Unable to load" class="imagebk">
+            <p>The Queen Of Nothing</p>
+            <p class="h">Part Four</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn8" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id08').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="king2.jpg" alt="Unable to load" class="imagebk">
+            <p>How the King of Elfhame <br>Learned to Hate Stories</p>
+            <p class="h">Part Five</p>
+        </div>
+        <div class="style">
+            <button onclick="Toggle(this.id)" id="hbtn9" class="hbtn"><i class="fas fa-heart"></i></button>
+            <button class="rbtn" onclick="document.getElementById('id09').style.display='block'"
+                style="width:auto;">Review</button>
+            <img src="large.jpg" alt="Unable to load" class="imagebk">
+            <p>A Very Large Expanse Of Sea</p>
+        </div>
+
+    </div>
+    <div id="id01" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Family Upstairs</p>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="family2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id02" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Maidens</p>
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="the maidens2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id03" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Silent Patient</p>
+            <span onclick="document.getElementById('id03').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="silent2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id04" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Cruel Prince</p>
+            <span onclick="document.getElementById('id04').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="the cruel prince2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id05" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Lost Sisters</p>
+            <span onclick="document.getElementById('id05').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="the lost sisters.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id06" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Wicked King</p>
+            <span onclick="document.getElementById('id06').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="wicked2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id07" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">The Queen Of Nothing</p>
+            <span onclick="document.getElementById('id07').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="queen2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id08" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">How the King of Elfhame Learned to Hate Stories</p>
+            <span onclick="document.getElementById('id08').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="king.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="id09" class="modal">
+        <div class="imgcontainer">
+            <p class="titl">A Very Large Expanse Of Se</p>
+            <span onclick="document.getElementById('id09').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="large2.jpg" alt="Avatar" class="avatar">
+            <div class="textarea">
+                <textarea cols="40" rows="5" placeholder="Write your opinion"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="btns">
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/aL.html"><input type="button" value="1" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/2ndL.html"><input type="button" value="2" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/3rdL.html"><input type="button" value="3" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/4thL.html"><input type="button" value="4" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/5thL.html"><input type="button" value="5" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/6thL.html"><input type="button" value="6" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/7thL.html"><input type="button" value="7" class="btnss" /></a>
+        <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/8thL.html"><input type="button" value="8" class="btnss" /></a>
+    </div>
+
+    <script src="bl.js"></script>
+
+</body>
+
+</html>

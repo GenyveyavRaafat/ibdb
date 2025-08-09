@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+
+   <link rel="stylesheet" href="css/aa.css">
+   <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+   <header>
+      <div class="wrapper">
+
+         <nav>
+
+            <div class="logo">
+               <img src="log2.png" alt="logo" height="60" width="90">
+            </div>
+
+            <div class="menu">
+               <ul>
+                  <li><a class="active" href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/a.html">Home</a></li>
+                  <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/aboutdark.html">About</a></li>
+                  <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/contactdark.html">Contact Us</a></li>
+               </ul>
+            </div>
+
+            <div class="pform">
+               <form action="" class="searchf">
+                  <input type="text" placeholder="Search here..." id="searchbox">
+                  <label for="searchbox" class="fas fa-search"></label>
+               </form>
+               <i id="hh" onclick="favlist()" class="fas fa-heart"></i>
+               <div class="links">
+                  <i id="ph" class="fas fa-user"></i>
+                  <div class="list">
+                     <ul>
+                        <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/profile.html" onclick="callvalue()">Profile Info</a></li>
+                        <li><a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/video/index.html">Logout</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+            </div>
+            <div class="cart-items-container" id="favl">
+               <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="unravel.jpg" alt="">
+                  <div class="content">
+                     <h3>Unravel Me</h3>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="1.jpg" alt="">
+                  <div class="content">
+                     <h3>Maybe Someday</h3>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="amareta.jpg" alt="">
+                  <div class="content">
+                     <h3>Amareta</h3>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="believe me.jpg" alt="">
+                  <div class="content">
+                     <h3>Believe Me</h3>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="hopless.jpg" alt="">
+                  <div class="content">
+                     <h3>Hopless</h3>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+      <div id="slides">
+         <div id="overflow">
+            <div class="inner">
+               <div class="slide slide_1">
+                  <div class="slide-content">
+                     <h2>Trending books</h2>
+                     <img src="r1.jpg" />
+                  </div>
+               </div>
+               <div class="slide slide_2">
+                  <div class="slide-content">
+                     <h2>Trending books</h2>
+                     <img src="r2.jpg" />
+                  </div>
+               </div>
+               <div class="slide slide_3">
+                  <div class="slide-content">
+                     <h2>Trending books</h2>
+                     <img src="r3.jpg" />
+                  </div>
+               </div>
+               <div class="slide slide_4">
+                  <div class="slide-content">
+                     <h2>Trending books</h2>
+                     <img src="r4.jpg" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="controls">
+         <label for="slide1"></label>
+         <label for="slide2"></label>
+         <label for="slide3"></label>
+         <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+         <label for="slide1"></label>
+         <label for="slide2"></label>
+         <label for="slide3"></label>
+         <label for="slide4"></label>
+      </div>
+   </div>
+
+   <div class="gridd">
+      <div class="y">
+         <button onclick="Toggle(this.id)" id="hbtn1" class="hbtn"><i class="fas fa-heart"></i></button>
+         <button class="rbtn" onclick="document.getElementById('id01').style.display='block'"
+            style="width:auto;">Review</button>
+         <img src="1.jpg" alt="Unable to load" class="imagebk">
+         <p>Maybe Someday</p>
+         <p class="h">Part One</p>
+      </div>
+      <div class="y">
+         <button onclick="Toggle(this.id)" id="hbtn2" class="hbtn"><i class="fas fa-heart"></i></button>
+         <button class="rbtn" onclick="document.getElementById('id02').style.display='block'"
+            style="width:auto;">Review</button>
+         <img src="3.jpg" alt="Unable to load" class="imagebk">
+         <p>Maybe Not</p>
+         <p class="h">Part Two</p>
+      </div>
+
+      <div class="y">
+         <button onclick="Toggle(this.id)" id="hbtn3" class="hbtn"><i class="fas fa-heart"></i></button>
+         <button class="rbtn" onclick="document.getElementById('id03').style.display='block'"
+            style="width:auto;">Review</button>
+         <img src="2.jpg" alt="Unable to load" class="imagebk">
+         <p>Maybe Now</p>
+         <p class="h">Part Three</p>
+      </div>
+
+      <div class="y">
+         <button onclick="Toggle(this.id)" id="hbtn4" class="hbtn"><i class="fas fa-heart"></i></button>
+         <button class="rbtn" onclick="document.getElementById('id04').style.display='block'"
+            style="width:auto;">Review</button>
+         <img src="hopless.jpg" alt="Unable to load" class="imagebk">
+         <p>Hopless</p>
+      </div>
+
+      <div class="y">
+         <button onclick="Toggle(this.id)" id="hbtn5" class="hbtn"><i class="fas fa-heart"></i></button>
+         <button class="rbtn" onclick="document.getElementById('id05').style.display='block'"
+            style="width:auto;">Review</button>
+         <img src="confess.jpg" alt="Unable to load" class="imagebk">
+         <p>Confess</p>
+      </div>
+
+      <div class="y">
+         <button onclick="Toggle(this.id)" id="hbtn6" class="hbtn"><i class="fas fa-heart"></i></button>
+         <button class="rbtn" onclick="document.getElementById('id06').style.display='block'"
+            style="width:auto;">Review</button>
+         <img src="layla.jpg" alt="Unable to load" class="imagebk">
+         <p>Layla</p>
+      </div>
+
+   </div>
+   <div id="id01" class="modal">
+      <div class="imgcontainer">
+         <p class="titl">Maybe someday</p>
+         <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+         <img src="11.jpg" alt="Avatar" class="avatar">
+         <div class="rating">
+            <div class="post">
+               <div class="text">Thanks for rating this book!</div>
+               <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+               <form action="#">
+                  <h4></h4>
+                  <div class="textarea">
+                     <textarea cols="30" placeholder="describe your opinion"></textarea>
+                  </div>
+                  <div class="subbtn">
+                     <button type="submit"> Post </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div id="id02" class="modal">
+      <div class="imgcontainer">
+         <p class="titl">Maybe not</p>
+         <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+         <img src="33.jpg" alt="Avatar" class="avatar">
+         <div class="rating">
+            <div class="post">
+               <div class="text">Thanks for rating this book!</div>
+               <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+               <form action="#">
+                  <h4></h4>
+                  <div class="textarea">
+                     <textarea cols="30" placeholder="describe your opinion"></textarea>
+                  </div>
+                  <div class="subbtn">
+                     <button type="submit"> Post </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="review">
+            <h1> previous <span>review</span> </h1>
+            <div class="box">
+               <img src="quote-img.png" alt="" class="quote">
+               <p>Here we can learn a little more about <br>Bridgette and her reasons for being the way she is,
+                  <br>although I don't like it. Having a difficult life doesn't give you<br> the right to pay it with
+                  people who are not to blame,<br> but everyone faces problems differently.
+               </p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div id="id03" class="modal">
+      <div class="imgcontainer">
+         <p class="titl">Maybe now</p>
+         <span onclick="document.getElementById('id03').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+         <img src="22.jpg" alt="Avatar" class="avatar">
+         <div class="rating">
+            <div class="post">
+               <div class="text">Thanks for rating this book!</div>
+               <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+               <form action="#">
+                  <h4></h4>
+                  <div class="textarea">
+                     <textarea cols="30" placeholder="describe your opinion"></textarea>
+                  </div>
+                  <div class="subbtn">
+                     <button type="submit"> Post </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div id="id04" class="modal">
+      <div class="imgcontainer">
+         <p class="titl">hopeless</p>
+         <span onclick="document.getElementById('id04').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+         <img src="hopeless2.jpg" alt="Avatar" class="avatar">
+         <div class="rating">
+            <div class="post">
+               <div class="text">Thanks for rating this book!</div>
+               <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+               <form action="#">
+                  <h4></h4>
+                  <div class="textarea">
+                     <textarea cols="30" placeholder="describe your opinion"></textarea>
+                  </div>
+                  <div class="subbtn">
+                     <button type="submit"> Post </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+   <div id="id05" class="modal">
+      <div class="imgcontainer">
+         <p class="titl">confess</p>
+         <span onclick="document.getElementById('id05').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+         <img src="confess2.jpg" alt="Avatar" class="avatar">
+         <div class="rating">
+            <div class="post">
+               <div class="text">Thanks for rating this book!</div>
+               <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+               <form action="#">
+                  <h4></h4>
+                  <div class="textarea">
+                     <textarea cols="30" placeholder="describe your opinion"></textarea>
+                  </div>
+                  <div class="subbtn">
+                     <button type="submit"> Post </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div id="id06" class="modal">
+      <div class="imgcontainer">
+         <p class="titl">layla</p>
+         <span onclick="document.getElementById('id06').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+         <img src="layla2.jpg" alt="Avatar" class="avatar">
+         <div class="rating">
+            <div class="post">
+               <div class="text">Thanks for rating this book!</div>
+               <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+               <form action="#">
+                  <h4></h4>
+                  <div class="textarea">
+                     <textarea cols="30" placeholder="describe your opinion"></textarea>
+                  </div>
+                  <div class="subbtn">
+                     <button type="submit"> Post </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+   <div class="btns">
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/a.html"><input type="button" value="1" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/2nd.html"><input type="button" value="2" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/3rd.html"><input type="button" value="3" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/4th.html"><input type="button" value="4" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/5th.html"><input type="button" value="5" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/6th.html"><input type="button" value="6" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/7th.html"><input type="button" value="7" class="btnss" /></a>
+      <a href="file:///C:/Users/LENOVO/Desktop/IBDB%20final/IBDB/8th.html"><input type="button" value="8" class="btnss" /></a>
+   </div>
+
+   <!-- admin -->
+   <button onclick="document.getElementById('id011').style.display='block'" style="width:auto;"
+      class="adm">Admin</button>
+   <div id="id011" class="modal">
+
+      <form class="modal-content animate" method="post">
+         <div class="imgcontainerr">
+            <span onclick="document.getElementById('id011').style.display='none'" class="close"
+               id="cancel">&times;</span>
+
+         </div>
+
+         <div class="containerr">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="passadmin" placeholder="enter admin password" required>
+
+            <input type="button" id=btn value="ok" onclick="checkpass()">
+         </div>
+      </form>
+   </div>
+
+   <script src="bl.js"></script>
+
+</body>
+
+</html>

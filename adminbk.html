@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/adminbk.css">
+</head>
+
+<body>
+    <div class="pagetitle">
+        <header>
+            <h1>ADMIN PAGE</h1>
+            <h2>You now have access to everything!</h2>
+        </header>
+
+        <div class="bookinput">
+            <form>
+                <div class="addbook">
+                    <button id="add">ADD BOOK</button>
+                </div>
+                <label for="id">ID:</label>
+                <input type="text" id="id" />
+
+                <label for="cover"> Upload cover:</label>
+                <input type="text" id="cover" />
+
+                <label for="bname">Book name:</label>
+                <input type="text" id="bname" />
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" />
+
+            </form>
+
+        </div>
+    </div>
+    <div class="allBooks">
+        <table id="Table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cover</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td> <img src="girl.jpg" alt="Unable to load"></td>
+                    <td>Girl in pieces</td>
+                    <td>Kathleen Glasgow</td>
+
+                    <td>
+                        <span class="actionbtn">
+                            <a href="#" class="rmv">Remove </a>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td> <img src="ends.jpg" alt="Unable to load"></td>
+                    <td>It ends with us</td>
+                    <td>Colleen Hoover</td>
+
+                    <td>
+                        <span class="actionbtn">
+                            <a href="#" class="rmv">Remove </a>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>03</td>
+                    <td> <img src="someday.jpg" alt="Unable to load"></td>
+                    <td>Maybe someday</td>
+                    <td>Colleen Hoover</td>
+
+                    <td>
+                        <span class="actionbtn">
+                            <a href="#" class="rmv">Remove </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td> <img src="confess.jpg" alt="Unable to load"></td>
+                    <td>Confess</td>
+                    <td>Colleen Hoover</td>
+                    <td>
+                        <span class="actionbtn">
+                            <a href="#" class="rmv">Remove </a>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>05</td>
+                    <td> <img src="pretty.jpg" alt="Unable to load"></td>
+                    <td>The summer I turned pretty</td>
+                    <td>Jenny Han</td>
+                    <td>
+                        <span class="actionbtn">
+                            <a href="#" class="rmv">Remove </a>
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="adminbk.js"></script>
+</body>
+
+</html>
