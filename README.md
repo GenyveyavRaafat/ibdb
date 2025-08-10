@@ -20,7 +20,7 @@ Key features:
 ## 📦 How to Run
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ibdb.git
+   git clone https://github.com/GenyveyavRaafat/ibdb.git
 2. **Open in Browser**
    Simply open index.html in any modern browser.
 
